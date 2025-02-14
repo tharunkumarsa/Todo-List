@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.todo-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    word-wrap: break-word; /* Ensures long words break */
+    overflow-wrap: break-word;
+    max-width: 100%; /* Prevents overflow */
+}
+
+span {
+    flex: 1;
+    max-width: 70%; /* Restrict task text width */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Keeps text in a single line */
+}
+
+span:hover {
+    white-space: normal; /* Show full text on hover */
+    background: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+li.completed {
+    text-decoration: line-through;
+    color: white;
+    background: gray;
+    opacity: 0.8;
+}
+
+.edit-btn, .delete-btn, .complete-btn {
+    margin-left: 5px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-btn {
+    background: #007bff;
+    color: white;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+}
+
+.complete-btn {
+    background: #28a745;
+    color: white;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+/* Background Video */
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; /* Sends it behind everything */
+}
+
+/* Container Styling */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text color contrast */
+h1, input, button {
+    color: black;
+}
