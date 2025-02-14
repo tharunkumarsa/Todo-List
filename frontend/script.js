@@ -1,4 +1,4 @@
-const apiUrl = "http://localhost:5000/tasks";
+const apiUrl = "https://todo-list-naf8.onrender.com/tasks";
 
 async function fetchTasks() {
     const response = await fetch(apiUrl);
